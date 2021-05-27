@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Test Create Public Channel Without Name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bfb986bc-d5b5-4792-ae84-ca54acd2d011</testCaseGuid>
+</TestCaseEntity>
