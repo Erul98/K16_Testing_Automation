@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Data_InternalData_UserAPI</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>fb4793ac-e9c4-4303-9062-15b1be852763</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>bxbyksjg8ffn3jzstzmur4xruw Bearer+is6xmwdnj3ggtjojfu63oobdee</data>
+   <data>mff46jeoyjb8x84hhsnohzc8ac Bearer+3zc4umsqkf88zbi6f43u1oe7zw</data>
+   <data>7tc3f5ex4tdrxrfz6b38exdn4e Bearer+p458dx1xe3gqzgjezf8c61j5ie</data>
+   <data>unq4grtjbpy63js7re68u5jncr Bearer+4wjdi6pxrpgb3f8cxbj1b4kpwr</data>
+   <data>piknwdqntjfkirusordozdqfxh Bearer+acsdqaez4brt7funh4dqpq3qoh</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>userId</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>accessToken</name>
+      <size>5</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

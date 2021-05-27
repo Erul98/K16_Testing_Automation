@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Loop Check Setting Block</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>24fddf82-dc54-4e6c-8b62-c88d8b12f596</testCaseGuid>
+   <variable>
+      <defaultValue>['Organization', 'Windows Dark', 'Mattermost Dark', 'Mattermost']</defaultValue>
+      <description></description>
+      <id>6d85814b-ce83-4cc4-89c9-f8c267ef3b83</id>
+      <masked>false</masked>
+      <name>themeArr</name>
+   </variable>
+</TestCaseEntity>

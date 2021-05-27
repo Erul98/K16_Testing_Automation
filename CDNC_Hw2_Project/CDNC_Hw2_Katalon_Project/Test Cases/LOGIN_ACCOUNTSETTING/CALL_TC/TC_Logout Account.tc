@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Logout Account</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>728421e6-c271-440a-a56c-11ea4f02b672</testCaseGuid>
+   <variable>
+      <defaultValue>'vunam1218'</defaultValue>
+      <description></description>
+      <id>59a4dcee-6c2f-416a-860d-67d4ae66c8f9</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'vunam1218'</defaultValue>
+      <description></description>
+      <id>f89ba3da-613a-4b28-9862-6520d632ac59</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

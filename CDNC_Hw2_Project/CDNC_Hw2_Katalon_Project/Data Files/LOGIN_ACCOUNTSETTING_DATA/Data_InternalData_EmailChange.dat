@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Data_InternalData_EmailChange</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>d2737c9e-22b5-4686-b5de-3a86e65ead41</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>vunam123%40gmail.com vunam1218</data>
+   <data>vunam1221512%40apple.com vunam1218</data>
+   <data>vunam12467%40samsumg.com vunam1218</data>
+   <data>vunam122321%40amazon.com vunam1218</data>
+   <data>vunam2233%40yahoo.com vunam1218</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>newEmail</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>password</name>
+      <size>5</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
