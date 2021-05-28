@@ -16,15 +16,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.ResponseObject
 
-WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/channels')
-WebUI.setText(findTestObject('Object Repository/Login Page/Username Input'), 'tiger.fsdev@gmail.com')
-WebUI.setText(findTestObject('Object Repository/Login Page/Password Input'), '123456')
-WebUI.click(findTestObject('Object Repository/Login Page/Login Button'))
-if(WebUI.verifyElementPresent(findTestObject('Object Repository/Drawer Obj Repo/Public Chanel Label'), 5, FailureHandling.CONTINUE_ON_FAILURE)){
-	System.out.println('Success find Public Chanel Label');
-}
-else {
-	System.out.println('Cant not find Public Chanel Label');
-}
-WebUI.closeBrowser()
+import groovy.json.JsonSlurper 
+
+ResponseObject  loginResponse = WS.sendRequest(findTestObject('Drawer Obj Repo/API Login'))
+
+JsonSlurper parser = new JsonSlurper()
+
+
+
+def afterParsing = parser.parseText(loginResponse.getResponseBodyContent())
+
+print loginResponse.getHeaderFields().Token[0]
+
+print(afterParsing.id)
+
+ResponseObject response = WS.sendRequest(findTestObject('Drawer Obj Repo/API Get Channels',[('MMUSERID'):afterParsing.id, ('MMAUTHTOKEN'):loginResponse.getHeaderFields().Token[0]]))
+
+WS.verifyResponseStatusCode(response, 200)
+
+WS.verifyElementPropertyValue(response, '[3].display_name', 'Off-Topic')
+

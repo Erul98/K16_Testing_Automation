@@ -21,10 +21,10 @@ WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/ch
 WebUI.setText(findTestObject('Object Repository/Login Page/Username Input'), 'tiger.fsdev@gmail.com')
 WebUI.setText(findTestObject('Object Repository/Login Page/Password Input'), '123456')
 WebUI.click(findTestObject('Object Repository/Login Page/Login Button'))
-if(WebUI.verifyElementPresent(findTestObject('Object Repository/Drawer Obj Repo/Public Chanel Label'), 5, FailureHandling.CONTINUE_ON_FAILURE)){
-	System.out.println('Success find Public Chanel Label');
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/Drawer Obj Repo/Direct Message Label'), 5, FailureHandling.CONTINUE_ON_FAILURE)){
+	System.out.println('Success find Direct Message Chanel Label');
 }
 else {
-	System.out.println('Cant not find Public Chanel Label');
+	System.out.println('Cant not find Direct Message Chanel Label');
 }
 WebUI.closeBrowser()
