@@ -20,14 +20,16 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testdata.InternalData
 
 InternalData data = findTestData('Drawer Data/List Channel Does Not Exist')
-
+WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/channels')
+WebUI.setText(findTestObject('Object Repository/Login Page/Username Input'), 'tiger.fsdev@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Login Page/Password Input'), '123456')
+WebUI.click(findTestObject('Object Repository/Login Page/Login Button'))
 for (def index : (0..data.getRowNumbers() - 1)) {
-	WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/channels')
-	WebUI.setText(findTestObject('Object Repository/Login Page/Username Input'), 'tiger.fsdev@gmail.com')
-	WebUI.setText(findTestObject('Object Repository/Login Page/Password Input'), '123456')
-	WebUI.click(findTestObject('Object Repository/Login Page/Login Button'))
+	
 	WebUI.click(findTestObject('Object Repository/Drawer Obj Repo/Switch Channel Button'))
 	WebUI.setText(findTestObject('Object Repository/Popup Switch Channel/Input'), data.internallyGetValue("name", index))
 	WebUI.verifyElementPresent(findTestObject('Object Repository/Popup Switch Channel/No Result Wrapper'), 30)
-	WebUI.closeBrowser()
+	WebUI.click(findTestObject('Object Repository/Popup Switch Channel/Cancel Button'))
 }
+
+WebUI.closeBrowser()

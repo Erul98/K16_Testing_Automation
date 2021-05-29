@@ -10,10 +10,13 @@
    <driver>InternalData</driver>
    <data>Public+Channel+1</data>
    <data>Public+Channel+2</data>
+   <data>Public+Channel+3</data>
+   <data>Public+Channel+4</data>
+   <data>Public+Channel+5</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>name</name>
-      <size>2</size>
+      <size>5</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>
