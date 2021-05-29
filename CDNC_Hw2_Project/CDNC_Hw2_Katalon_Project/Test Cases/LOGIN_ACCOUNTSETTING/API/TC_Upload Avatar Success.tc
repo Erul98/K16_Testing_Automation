@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Upload Avatar Success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1d27e22c-9e66-49de-9441-c66cc31266cb</testCaseGuid>
+   <variable>
+      <defaultValue>'bxbyksjg8ffn3jzstzmur4xruw'</defaultValue>
+      <description></description>
+      <id>98b27d81-d8f8-4d66-8bb5-00b1bb5122fc</id>
+      <masked>false</masked>
+      <name>userId</name>
+   </variable>
+   <variable>
+      <defaultValue>'Bearer is6xmwdnj3ggtjojfu63oobdee'</defaultValue>
+      <description></description>
+      <id>aa81ee8c-985b-444d-8699-1267edfd55ee</id>
+      <masked>false</masked>
+      <name>accessToken</name>
+   </variable>
+   <variable>
+      <defaultValue>'C:\\\\Users\\\\vunam\\\\Downloads\\\\graduate.png'</defaultValue>
+      <description></description>
+      <id>7e7ef024-a9a0-4fd5-b969-82658a22d803</id>
+      <masked>false</masked>
+      <name>image</name>
+   </variable>
+</TestCaseEntity>

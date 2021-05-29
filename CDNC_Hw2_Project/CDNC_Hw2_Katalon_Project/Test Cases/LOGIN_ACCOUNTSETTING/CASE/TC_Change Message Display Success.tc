@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Change Message Display Success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>34711950-7a8d-4ce5-8e49-ec7fd2804f9f</testCaseGuid>
+   <variable>
+      <defaultValue>'DETAIL'</defaultValue>
+      <description></description>
+      <id>602c4401-31c2-4ba6-8627-5f98d91cdde7</id>
+      <masked>false</masked>
+      <name>display</name>
+   </variable>
+</TestCaseEntity>

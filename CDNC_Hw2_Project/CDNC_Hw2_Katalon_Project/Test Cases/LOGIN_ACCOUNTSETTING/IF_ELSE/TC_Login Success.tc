@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Login Success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>94b09af4-2c2e-43b7-a9cb-19ac42df4450</testCaseGuid>
+   <variable>
+      <defaultValue>'vunam1218'</defaultValue>
+      <description></description>
+      <id>805b99a6-c020-46ea-968c-2af1f098b25d</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'vunam1218'</defaultValue>
+      <description></description>
+      <id>a976a6c4-3b46-4f91-b35e-12f7adb13533</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

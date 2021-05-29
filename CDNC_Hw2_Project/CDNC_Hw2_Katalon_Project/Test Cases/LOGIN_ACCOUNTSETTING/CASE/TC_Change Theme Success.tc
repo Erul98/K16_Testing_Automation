@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Change Theme Success</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8ab1a833-b291-4a11-a238-caa26522f118</testCaseGuid>
+   <variable>
+      <defaultValue>'Mattermost Dark'</defaultValue>
+      <description></description>
+      <id>e3674c4c-825d-4874-8c67-a30343c50eea</id>
+      <masked>false</masked>
+      <name>theme</name>
+   </variable>
+</TestCaseEntity>

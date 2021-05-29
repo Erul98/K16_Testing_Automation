@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Login Fail Notice</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>96bb52c8-afd8-4be1-a888-100358171e07</testCaseGuid>
+   <variable>
+      <defaultValue>'vunam1218'</defaultValue>
+      <description></description>
+      <id>00d3315c-ebcf-4f15-944b-71732b483f50</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'vunam12'</defaultValue>
+      <description></description>
+      <id>ead7150c-993a-4b9b-a50f-334fc2873651</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
