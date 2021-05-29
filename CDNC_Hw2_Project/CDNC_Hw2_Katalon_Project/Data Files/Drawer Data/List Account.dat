@@ -9,20 +9,24 @@
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
    <data>%40thienho tiger.fsdev%40gmail.com 123456</data>
+   <data>%40testaccount1 testaccount1%40gmail.com 123456</data>
+   <data>%40testaccount2 testaccount2%40gmail.com 123456</data>
+   <data>%40testaccount3 testaccount3%40gmail.com 123456</data>
+   <data>%40testaccount4 testaccount4%40gmail.com 123456</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>name</name>
-      <size>1</size>
+      <size>5</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>email</name>
-      <size>1</size>
+      <size>5</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
       <name>password</name>
-      <size>1</size>
+      <size>5</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>

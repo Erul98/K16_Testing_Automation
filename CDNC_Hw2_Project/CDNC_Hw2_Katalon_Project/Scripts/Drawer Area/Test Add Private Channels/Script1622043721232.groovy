@@ -19,7 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 import com.kms.katalon.core.testdata.InternalData
 InternalData data = findTestData('Drawer Data/List Private Channels')
-WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/channels')
 for (def index : (0..data.getRowNumbers() - 1)) {
 	WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/channels')
 	WebUI.setText(findTestObject('Object Repository/Login Page/Username Input'), 'tiger.fsdev@gmail.com')
