@@ -7,6 +7,7 @@
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>b1b60c9c-1722-4d88-a491-85ba808ba3d6</dataFileGUID>
    <dataSourceUrl>C:\Users\vunam\OneDrive\Documents\katalon\Theme.csv</dataSourceUrl>
+   <dataSourceUrl>Data Files/LOGIN_ACCOUNTSETTING_DATA/Data/Theme.csv</dataSourceUrl>
    <driver>CSV</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
