@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ValidateCRUDRequest</name>
+   <tag>crud-request</tag>
+   <comment></comment>
+   <testCaseGuid>f338ca04-9515-440d-971a-e4b304d8b667</testCaseGuid>
+</TestCaseEntity>
