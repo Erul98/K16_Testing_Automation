@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>ad02517e-d26f-468a-bdbd-fcab26dc0621</dataFileGUID>
-   <dataSourceUrl>C:\Users\vunam\OneDrive\Documents\katalon\Language.csv</dataSourceUrl>
+   <dataSourceUrl>Data Files/LOGIN_ACCOUNTSETTING_DATA/Data/Language.csv</dataSourceUrl>
    <driver>CSV</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
