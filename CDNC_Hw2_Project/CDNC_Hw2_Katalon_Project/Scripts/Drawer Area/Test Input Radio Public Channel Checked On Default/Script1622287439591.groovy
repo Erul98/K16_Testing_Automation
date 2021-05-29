@@ -16,26 +16,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.RequestObject
-import com.kms.katalon.core.testobject.impl.HttpTextBodyContent
-import com.kms.katalon.core.testdata.CSVData
 
-
-def request = (RequestObject)findTestObject('Teams/createTeam')
-
-CSVData data = findTestData("UI_Message_And_Teams_RESTAPI_DATA/CSVs/information_team_data")
-
-def index = 0;
-
-while(index < data.getRowNumbers()) {
-	String body = '{"name": ' + '"' + data.getAllData()[index][0] + '",' + '"display_name": ' + '"' + data.getAllData()[index][1] + '",' + '"type": ' + '"' + data.getAllData()[index][2] + '"' + '}'
-	System.out.println(body)
-	try {
-		request.setBodyContent(new HttpTextBodyContent(body, "UTF-8", "application/json"))
-	} catch(Exception e) {
-		System.out.println(e)
-	}
-	System.out.println(WS.sendRequest(request))
-	WS.delay(5)
-	index++
+WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/channels')
+WebUI.setText(findTestObject('Object Repository/Login Page/Username Input'), 'tiger.fsdev@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Login Page/Password Input'), '123456')
+WebUI.click(findTestObject('Object Repository/Login Page/Login Button'))
+WebUI.click(findTestObject('Object Repository/Drawer Obj Repo/Create Public Channel Button'))
+if(WebUI.verifyElementChecked(findTestObject('Object Repository/Popup New Chanel/Input Radio Public Channel'), 5, FailureHandling.CONTINUE_ON_FAILURE)){
+	System.out.println('Success find Direct Message Chanel Label');
 }
+else {
+	System.out.println('Cant not find Direct Message Chanel Label');
+}
+WebUI.closeBrowser()
