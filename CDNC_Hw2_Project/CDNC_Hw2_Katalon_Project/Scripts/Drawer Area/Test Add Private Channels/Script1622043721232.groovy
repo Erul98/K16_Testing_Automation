@@ -19,13 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 import com.kms.katalon.core.testdata.InternalData
 InternalData data = findTestData('Drawer Data/List Private Channels')
+WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/channels')
+WebUI.setText(findTestObject('Object Repository/Login Page/Username Input'), 'tiger.fsdev@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Login Page/Password Input'), '123456')
+WebUI.click(findTestObject('Object Repository/Login Page/Login Button'))
 for (def index : (0..data.getRowNumbers() - 1)) {
-	WebUI.openBrowser('https://haibui-mattermost-demo.herokuapp.com/master-devops/channels')
-	WebUI.setText(findTestObject('Object Repository/Login Page/Username Input'), 'tiger.fsdev@gmail.com')
-	WebUI.setText(findTestObject('Object Repository/Login Page/Password Input'), '123456')
-	WebUI.click(findTestObject('Object Repository/Login Page/Login Button'))
 	WebUI.click(findTestObject('Object Repository/Drawer Obj Repo/Create Private Channel Button'))
 	WebUI.setText(findTestObject('Object Repository/Popup New Chanel/Name Input'), data.internallyGetValue("name", index))
 	WebUI.click(findTestObject('Object Repository/Popup New Chanel/Create Chanel Button'))
-	WebUI.closeBrowser()
+	if(WebUI.verifyElementPresent(findTestObject('Object Repository/Popup New Chanel/Error Message'), 20)) {
+		WebUI.click(findTestObject('Object Repository/Popup New Chanel/Cancel Button'))
+	}
 }
+
+WebUI.closeBrowser()
