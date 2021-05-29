@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-for (int i = 1; i < findTestData("Data_CSV_Language").getRowNumbers(); i ++) {
-	println(findTestData("Data_CSV_Language").getValue(1, i));
-	WebUI.callTestCase(findTestCase('LOGIN_ACCOUNTSETTING/LOOP/TC_Loop Setting Language'), [('language') : findTestData("Data_CSV_Language").getValue(1, i)], FailureHandling.STOP_ON_FAILURE);
+for (int i = 1; i < findTestData("LOGIN_ACCOUNTSETTING_DATA/Data_CSV_Language").getRowNumbers(); i ++) {
+	println(findTestData("LOGIN_ACCOUNTSETTING_DATA/Data_CSV_Language").getValue(1, i));
+	WebUI.callTestCase(findTestCase('LOGIN_ACCOUNTSETTING/LOOP/TC_Loop Setting Language'), [('language') : findTestData("LOGIN_ACCOUNTSETTING_DATA/Data_CSV_Language").getValue(1, i)], FailureHandling.STOP_ON_FAILURE);
 }
 
 WebUI.closeBrowser();

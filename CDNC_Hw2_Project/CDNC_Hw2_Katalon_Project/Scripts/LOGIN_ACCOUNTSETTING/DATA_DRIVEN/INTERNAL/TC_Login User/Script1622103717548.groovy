@@ -21,10 +21,10 @@ WebUI.openBrowser('');
 
 WebUI.navigateToUrl('https://haibui-mattermost-demo.herokuapp.com/login');
 
-for (int i = 1 ; i < findTestData('Data_InternalData_AccountLogin').getRowNumbers(); i++) {
+for (int i = 1 ; i < findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_AccountLogin').getRowNumbers(); i++) {
 	
-	String username = findTestData('Data_InternalData_AccountLogin').getValue(1, i);
-	String password = findTestData('Data_InternalData_AccountLogin').getValue(2, i);
+	String username = findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_AccountLogin').getValue(1, i);
+	String password = findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_AccountLogin').getValue(2, i);
 	
 	WebUI.callTestCase(findTestCase('LOGIN_ACCOUNTSETTING/Common Test Case/Login'), [('username'): username, ('password') : password], FailureHandling.STOP_ON_FAILURE);
 

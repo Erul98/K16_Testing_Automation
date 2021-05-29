@@ -30,11 +30,11 @@ WebUI.click(findTestObject('Object Repository/Page_Town Square - master devops M
 
 DriverFactory.getWebDriver().findElement(By.xpath( "//button[@id='generalButton']")).click();
 
-for (int i = 1 ; i < findTestData('Data_InternalData_NameAccount').getRowNumbers(); i++ ) {
+for (int i = 1 ; i < findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_NameAccount').getRowNumbers(); i++ ) {
 	DriverFactory.getWebDriver().findElement(By.xpath( "//button[@id='nameEdit']")).click();
 	
-	String firstName = findTestData('Data_InternalData_NameAccount').getValue(1, i);
-	String lastName = findTestData('Data_InternalData_NameAccount').getValue(2, i);
+	String firstName = findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_NameAccount').getValue(1, i);
+	String lastName = findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_NameAccount').getValue(2, i);
 	
 	WebUI.setText(findTestObject('Object Repository/Page_Town Square - master devops Mattermost/input_First Name_firstName'), firstName);
 	WebUI.setText( findTestObject('Object Repository/Page_Town Square - master devops Mattermost/input_Last Name_lastName'),lastName);

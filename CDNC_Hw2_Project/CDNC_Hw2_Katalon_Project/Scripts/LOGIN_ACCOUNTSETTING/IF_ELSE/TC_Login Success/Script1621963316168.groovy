@@ -21,10 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://haibui-mattermost-demo.herokuapp.com/login')
 
+
 boolean status = false;
 
 try {	
-	WebUI.callTestCase(findTestCase('Common Test Case/login'), [('username') : username, ('password') : password], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('LOGIN_ACCOUNTSETTING/Common Test Case/login'), [('username') : username, ('password') : password], FailureHandling.STOP_ON_FAILURE)
 	status = true;
 }catch(Exception ex) {
 

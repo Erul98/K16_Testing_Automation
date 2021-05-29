@@ -26,11 +26,11 @@ import com.kms.katalon.core.testobject.TestObjectProperty as TestObjectProperty
 
 String baseUrl = "https://haibui-mattermost-demo.herokuapp.com/api/v4/users/"
 
-for (int i = 1 ; i < findTestData('Data_InternalData_UserAPI').getRowNumbers(); i++) {
+for (int i = 1 ; i < findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_UserAPI').getRowNumbers(); i++) {
 
 	
-String userId = findTestData("Data_InternalData_UserAPI").getValue(1, i);
-String accessToken = findTestData("Data_InternalData_UserAPI").getValue(2, i);
+String userId = findTestData("LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_UserAPI").getValue(1, i);
+String accessToken = findTestData("LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_UserAPI").getValue(2, i);
 	
 String url = baseUrl + userId
 
