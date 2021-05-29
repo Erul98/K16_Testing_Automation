@@ -39,5 +39,3 @@ while(index < data.getRowNumbers()) {
 	WS.delay(5)
 	index++
 }
-
-WS.callTestCase(findTestCase, null)
