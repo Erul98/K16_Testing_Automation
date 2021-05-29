@@ -8,14 +8,24 @@
    <dataFileGUID>7e79d91f-4b6a-428a-8d49-74d74edb3a45</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>Public+Channel+1</data>
-   <data>Public+Channel+2</data>
-   <data>Public+Channel+3</data>
-   <data>Public+Channel+4</data>
-   <data>Public+Channel+5</data>
+   <data>Public+Channel+1 play+game header+1</data>
+   <data>Public+Channel+2 watch+movie header+2</data>
+   <data>Public+Channel+3 chat header+3</data>
+   <data>Public+Channel+4 make+new+relationship header+4</data>
+   <data>Public+Channel+5 sale header+5</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>name</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>purpose</name>
+      <size>5</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>header</name>
       <size>5</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
