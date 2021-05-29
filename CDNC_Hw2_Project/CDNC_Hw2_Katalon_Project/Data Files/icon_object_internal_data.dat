@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>icon_object_internal_data</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>fb8bb0b1-0414-4adb-82b6-19aa7b586664</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>Object+Repository%2Fsend_icon_or%2FPage_Off-Topic+-+master+devops+Mattermost%2Fimg_People_emoji-1f600</data>
+   <data>Object+Repository%2Fsend_icon_or%2FPage_Off-Topic+-+master+devops+Mattermost%2Fimg_People_emoji-1f601</data>
+   <data>Object+Repository%2Fsend_icon_or%2FPage_Off-Topic+-+master+devops+Mattermost%2Fimg_People_emoji-1f603</data>
+   <data>Object+Repository%2Fsend_icon_or%2FPage_Off-Topic+-+master+devops+Mattermost%2Fimg_People_emoji-1f604</data>
+   <data>Object+Repository%2Fsend_icon_or%2FPage_Off-Topic+-+master+devops+Mattermost%2Fimg_People_emoji-1f606</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>object</name>
+      <size>5</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

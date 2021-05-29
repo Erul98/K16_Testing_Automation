@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>information_team_data</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator>SEMICOLON</csvSeperator>
+   <dataFileGUID>b020fead-50ca-44d7-8848-c2b0ba7e44f4</dataFileGUID>
+   <dataSourceUrl>/Users/anhnguyenhoang/Documents/App/K16_Testing_Automation/CDNC_Hw2_Project/CDNC_Hw2_Katalon_Project/files/information_team_data.csv</dataSourceUrl>
+   <driver>CSV</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

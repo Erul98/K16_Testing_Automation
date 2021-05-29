@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Get list teams</description>
+   <name>teams</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0f96174-aa98-4978-a203-f5e6b5a0a22e</testCaseGuid>
+</TestCaseEntity>
