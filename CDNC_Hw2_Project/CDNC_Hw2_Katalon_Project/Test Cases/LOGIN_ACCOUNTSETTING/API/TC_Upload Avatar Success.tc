@@ -20,7 +20,7 @@
       <name>accessToken</name>
    </variable>
    <variable>
-      <defaultValue>'files\\Image\\PEOPLE ICON-36.jpg'</defaultValue>
+      <defaultValue>'files/Image/PEOPLE ICON-36.jpg'</defaultValue>
       <description></description>
       <id>7e7ef024-a9a0-4fd5-b969-82658a22d803</id>
       <masked>false</masked>
