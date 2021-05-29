@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Data import Theme</name>
+   <name>TC_Data Change Email</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3f629663-a6b1-4418-bc75-bf2470ddb25c</testCaseGuid>

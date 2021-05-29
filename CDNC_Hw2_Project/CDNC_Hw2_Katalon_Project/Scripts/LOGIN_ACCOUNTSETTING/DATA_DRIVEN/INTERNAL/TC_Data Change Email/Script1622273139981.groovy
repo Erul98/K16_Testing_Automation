@@ -33,11 +33,11 @@ WebUI.click(findTestObject('Object Repository/Page_Town Square - master devops M
 
 WebUI.click(findTestObject('Object Repository/Page_Town Square - master devops Mattermost/button_General'))
 
-for (int i = 1 ; i <  findTestData('Data_InternalData_EmailChange').getRowNumbers() ; i ++) {
+for (int i = 1 ; i <  findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_EmailChange').getRowNumbers() ; i ++) {
 	
 	
-	String newEmail = findTestData('Data_InternalData_EmailChange').getValue(1, i);
-	String password =  findTestData('Data_InternalData_EmailChange').getValue(2, i);
+	String newEmail = findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_EmailChange').getValue(1, i);
+	String password =  findTestData('LOGIN_ACCOUNTSETTING_DATA/Data_InternalData_EmailChange').getValue(2, i);
 	
 	DriverFactory.getWebDriver().findElement(By.xpath('//button[@id=\'emailEdit\']')).click()
 	
